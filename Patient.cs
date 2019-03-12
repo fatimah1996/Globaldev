@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -8,6 +9,7 @@ namespace Globaldev.Models
     public class Patient
     {
         public int ID { get; set; }
+        [Display(Name = "Name")]
         public string fName { get; set; }
         public string mName { get; set; }
         public string lName { get; set; }
